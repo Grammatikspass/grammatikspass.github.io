@@ -39,7 +39,7 @@
                         <div id="tab-content1" class="tab-content">
                           <task>W&auml;hle die richtige Schreibweise f&uuml;r die L&uuml;cken aus.</task>
                           <p><select id="answer1" size="1" class="" ><option value=""></option><option value="Riter">Riter</option><option value="Ritter">Ritter</option></select> Cunibert steht vor einer dunklen H&ouml;hle.</p>
-                          <p>In der H&ouml;hle lebt ein gro&szlig;er, <select id="answer2" size="1" class=""><option value=""></option><option value="b&ouml;ser">b&ouml;ser</option><option value="b&ouml;sser">b&ouml;sser</option></select> Drache.</p>
+                          <p>In der H&ouml;hle lebt ein gro&szlig;er, <select id="answer2" size="1" class=""><option value=""></option><option value="boeser">b&ouml;ser</option><option value="boesser">b&ouml;sser</option></select> Drache.</p>
                           <p>Der Drache spuckt Feuer und die <select id="answer3" size="1" class=""><option value=""></option><option value="Flamen">Flamen</option><option value="Flammen">Flammen</option></select> schie&szlig;en aus seinem Maul.</p>
                           <p><button onclick="uebung1()">Fertig!!!</button></p>
                           <p id="ergebnis1"> </p>
@@ -95,7 +95,7 @@ else
      {
        document.getElementById("answer1").setAttribute("class","redText1");
      }
-if (document.getElementById("answer2").value == "böser")
+if (document.getElementById("answer2").value == "boeser")
       {
         x=++x;
         document.getElementById("answer2").setAttribute("class","");
@@ -119,7 +119,7 @@ if (x==3)
       }
 else
       {
-        document.getElementById("ergebnis1").innerHTML="Schau nochmal über deine Antworten!";
+        document.getElementById("ergebnis1").innerHTML="Schau nochmal &uumlber deine Antworten!";
       }
 }
 
