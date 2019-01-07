@@ -38,7 +38,7 @@
                         <label for="tab1">&Uuml;bung 1</label>
                         <div id="tab-content1" class="tab-content">
                           <task>W&auml;hle die richtige Schreibweise f&uuml;r die L&uuml;cken aus.</task>
-                          <p>In dem  <select id="answer1" size="1" class="" ><option value=""></option><option value="gro&szlig;en">gro&szlig;en</option><option value="Gro&szlig;en">Gro&szlig;en</option></select>, unheimlichen Haus im Wald, lebt die kleine Hexe Wilma.</p>
+                          <p>In dem  <select id="answer1" size="1" class="" ><option value=""></option><option value="grossen">gro&szlig;en</option><option value="Grossen">Gro&szlig;en</option></select>, unheimlichen Haus im Wald, lebt die kleine Hexe Wilma.</p>
                           <p>Das <select id="answer2" size="1" class=""><option value=""></option><option value="zaubern">zaubern</option><option value="Zaubern">Zaubern</option></select> f&auml;llt Wilma manchmal noch sehr schwer.</p>
                           <p>Fast jeden Tag &uuml;bt Wilma ihre Zauberspr&uuml;che, um sich zu verbessern.</p>
                           <p><select id="answer3" size="1" class=""><option value=""></option><option value="als">als</option><option value="Als">Als</option></select> sie Durst bekommt, versucht Wilma sich ein Glas Wasser zu zaubern.</p>
@@ -90,7 +90,7 @@ function uebung1()
 {
 
 var x = 0;
-if (document.getElementById("answer1").value == "großen")
+if (document.getElementById("answer1").value == "grossen")
       {
         x=++x;
         document.getElementById("answer1").setAttribute("class","");
@@ -123,7 +123,7 @@ if (x==3)
       }
 else
       {
-        document.getElementById("ergebnis1").innerHTML="Schau nochmal über deine Antworten!";
+        document.getElementById("ergebnis1").innerHTML="Schau nochmal &uuml;ber deine Antworten!";
       }
 }
 
@@ -161,7 +161,7 @@ if (x==3)
       }
 else
       {
-        document.getElementById("ergebnis2").innerHTML="Schau nochmal über deine Antworten!";
+        document.getElementById("ergebnis2").innerHTML="Schau nochmal &uuml;ber deine Antworten!";
       }
 }
 

@@ -38,7 +38,7 @@
                           <task>W&auml;hle die richtige Schreibweise f&uuml;r die L&uuml;cken aus.</task>
                           <p>"Gleich <select id="answer1" size="1" class="" ><option value=""></option><option value="get">get</option><option value="geht">geht</option></select> es los Lotta!“, sagt Finn kurz vor dem Raketenstart zu seiner Astronautenpartnerin.</p>
                           <p>Beide freuen sich schon <select id="answer2" size="1" class=""><option value=""></option><option value="riesig">riesig</option><option value="riehsig">riehsig</option></select> auf ihr erstes Abenteuer im Weltall.</p>
-                          <p>In wenigen Minuten wird das Startsignal <select id="answer3" size="1" class=""><option value=""></option><option value="ert&ouml;nen">ert&ouml;nen</option><option value="ert&ouml;hnen">ert&ouml;hnen</option></select>.</p>
+                          <p>In wenigen Minuten wird das Startsignal <select id="answer3" size="1" class=""><option value=""></option><option value="ertoenen">ert&ouml;nen</option><option value="ertoehnen">ert&ouml;hnen</option></select>.</p>
                           <p><button onclick="uebung1()">Fertig!!!</button></p>
                           <p id="ergebnis1"> </p>
                         </div>
@@ -103,7 +103,7 @@ else
       {
         document.getElementById("answer2").setAttribute("class","redText1");
       }
-if (document.getElementById("answer3").value == "ertönen")
+if (document.getElementById("answer3").value == "ertoenen")
       {
         x=++x;
         document.getElementById("answer3").setAttribute("class","");
@@ -118,7 +118,7 @@ if (x==3)
       }
 else
       {
-        document.getElementById("ergebnis1").innerHTML="Schau nochmal über deine Antworten!";
+        document.getElementById("ergebnis1").innerHTML="Schau nochmal &uuml;ber deine Antworten!";
       }
 }
 
@@ -156,7 +156,7 @@ if (x==3)
       }
 else
       {
-        document.getElementById("ergebnis2").innerHTML="Schau nochmal über deine Antworten!";
+        document.getElementById("ergebnis2").innerHTML="Schau nochmal &uuml;ber deine Antworten!";
       }
 }
 

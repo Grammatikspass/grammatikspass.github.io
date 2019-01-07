@@ -39,7 +39,7 @@
                         <div id="tab-content1" class="tab-content">
                           <task>W&auml;hle die richtige Schreibweise f&uuml;r die L&uuml;cken aus.</task>
                           <p>Ritter Cunibert <select id="answer1" size="1" class="" ><option value=""></option><option value="stet">stet</option><option value="steht">steht</option></select> vor einer dunklen H&ouml;hle.</p>
-                          <p>In der H&ouml;hle wartet ein gro&szlig;er, <select id="answer2" size="1" class=""><option value=""></option><option value="b&ouml;ser">b&ouml;ser</option><option value="b&ouml;hser">b&ouml;hser</option></select> Drache.</p>
+                          <p>In der H&ouml;hle wartet ein gro&szlig;er, <select id="answer2" size="1" class=""><option value=""></option><option value="boeser">b&ouml;ser</option><option value="boehser">b&ouml;hser</option></select> Drache.</p>
                           <p>Er zieht sein Schwert, setzt seinen Helm auf und <select id="answer3" size="1" class=""><option value=""></option><option value="get">get</option><option value="geht">geht</option></select> auf den Eingang zu.</p>
                           <p><button onclick="uebung1()">Fertig!!!</button></p>
                           <p id="ergebnis1"> </p>
@@ -97,7 +97,7 @@ else
      {
        document.getElementById("answer1").setAttribute("class","redText1");
      }
-if (document.getElementById("answer2").value == "böser")
+if (document.getElementById("answer2").value == "boeser")
       {
         x=++x;
         document.getElementById("answer2").setAttribute("class","");
@@ -121,7 +121,7 @@ if (x==3)
       }
 else
       {
-        document.getElementById("ergebnis1").innerHTML="Schau nochmal über deine Antworten!";
+        document.getElementById("ergebnis1").innerHTML="Schau nochmal &uuml;ber deine Antworten!";
       }
 }
 
@@ -159,7 +159,7 @@ if (x==3)
       }
 else
       {
-        document.getElementById("ergebnis2").innerHTML="Schau nochmal über deine Antworten!";
+        document.getElementById("ergebnis2").innerHTML="Schau nochmal &uuml;ber deine Antworten!";
       }
 }
 
