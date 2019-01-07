@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Hexe</title>
+<meta name="author" content="Nils">
+<meta name="editor" content="html-editor phase 5">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+<a href="index.html"><h1>Grammatikspa&szlig;</h1></a>
+<h3>Das Abenteuer der kleinen Hexe Wilma</h3>
+<h4>&Uuml;bungen zur Gro&szlig;- und Kleinschreibung</h4>
+  <div class="column2">
+     <div class="bilder">
+       <ul class="tabs">
+                <li>
+                        <input type="radio" name="tabs1" id="tab4" checked />
+                        <div id="tab-content4" class="tab-content">
+                          <p><table>
+                                 <tr>
+                                   <td><img src="Bilder/Hexe/1.1.png" style="width:100%"</td>
+                                   <td><img src="Bilder/Hexe/1.2.png" style="width:100%"</td>
+                                 </tr>
+                                 <tr>
+                                   <td><img src="Bilder/Hexe/1.3.png" style="width:100%"</td>
+                                   <td><img src="Bilder/Hexe/1.4.png" style="width:100%"</td>
+                                 </tr>
+                             </table></p>
+                        </div>
+                </li>
+        </ul>
+     </div>
+  </div>
+  <div class="column2">
+     <ul class="tabs">
+                <li>
+                        <input type="radio" name="tabs" id="tab1" checked />
+                        <label for="tab1">&Uuml;bung 1</label>
+                        <div id="tab-content1" class="tab-content">
+                          <task>W&auml;hle die richtige Schreibweise f&uuml;r die L&uuml;cken aus.</task>
+                          <p>In dem  <select id="answer1" size="1" class="" ><option value=""></option><option value="gro&szlig;en">gro&szlig;en</option><option value="Gro&szlig;en">Gro&szlig;en</option></select>, unheimlichen Haus im Wald, lebt die kleine Hexe Wilma.</p>
+                          <p>Das <select id="answer2" size="1" class=""><option value=""></option><option value="zaubern">zaubern</option><option value="Zaubern">Zaubern</option></select> f&auml;llt Wilma manchmal noch sehr schwer.</p>
+                          <p>Fast jeden Tag &uuml;bt Wilma ihre Zauberspr&uuml;che, um sich zu verbessern.</p>
+                          <p><select id="answer3" size="1" class=""><option value=""></option><option value="als">als</option><option value="Als">Als</option></select> sie Durst bekommt, versucht Wilma sich ein Glas Wasser zu zaubern.</p>
+                          <p>Dabei &uuml;berschwemmt sie  ihr ganzes Zimmer.</p>
+                          <p><button onclick="uebung1()">Fertig!!!</button></p>
+                          <p id="ergebnis1"> </p>
+                        </div>
+                </li>
+
+                <li>
+                        <input type="radio" name="tabs" id="tab2" />
+                        <label for="tab2">&Uuml;bung 2</label>
+                        <div id="tab-content2" class="tab-content">
+                          <task>F&uuml;lle die L&uuml;cken mit der richtigen Schreibweise aus.</task>
+                          <p>Um sich zu retten, h&auml;ngt sie sich schnell an einen <input type="text" id="answer4" size="1" class="">ronleuchter.</p>
+                          <p>Selbst die <input type="text" id="answer5" size="1" class="">leinen Flederm&auml;use fliegen vor Schreck in die H&ouml;he.</p>
+                          <p>Wilma &uuml;berlegt, welcher <input type="text" id="answer6" size="1" class="">auberspruch ihr helfen kann.</p>
+                          <p><button onclick="uebung2()">Fertig!!!</button></p>
+                          <p id="ergebnis2"> </p>
+                        </div>
+                </li>
+
+                <li>
+                        <input type="radio" name="tabs" id="tab3" />
+                        <label for="tab3">&Uuml;bung 3</label>
+                        <div id="tab-content3" class="tab-content">
+                          <task>Schreibe das richtige Wort in die L&uuml;cken.</task>
+                          <p>Wilma nimmt ihren Zauberstab und f&auml;ngt an zu <input type="text" id="answer7" size="7">.</p>
+                          <p>"Schlangenei und Kr&ouml;tendreck, dieses <input type="text" id="answer8" size="7"> sei sofort weg!"</p>
+                          <p>Das Wasser verschwindet und Wilma l&auml;sst sich langsam wieder zu <input type="text" id="answer9" size="7"> fallen.</p>
+                          <p>Das ist ja nochmal gut gegangen.</p>
+                          <p><button onclick="uebung3()">Fertig!!!</button></p>
+                          <p id="ergebnis3"> </p>
+                        </div>
+                </li>
+        </ul>
+     </div>
+<footer>
+
+<a href="Impressum.html">Impressum</a> &#124;
+<a href="AGB.html">Datenschutz</a>
+
+</footer>
+</body>
+
+<script language="javascript">
+
+function uebung1()
+{
+
+var x = 0;
+if (document.getElementById("answer1").value == "großen")
+      {
+        x=++x;
+        document.getElementById("answer1").setAttribute("class","");
+      }
+else
+     {
+       document.getElementById("answer1").setAttribute("class","redText1");
+     }
+if (document.getElementById("answer2").value == "Zaubern")
+      {
+        x=++x;
+        document.getElementById("answer2").setAttribute("class","");
+      }
+else
+      {
+        document.getElementById("answer2").setAttribute("class","redText1");
+      }
+if (document.getElementById("answer3").value == "Als")
+      {
+        x=++x;
+        document.getElementById("answer3").setAttribute("class","");
+      }
+else
+      {
+        document.getElementById("answer3").setAttribute("class","redText1");
+      }
+if (x==3)
+      {
+        document.getElementById("ergebnis1").innerHTML="Alles richtig, lies weiter!";
+      }
+else
+      {
+        document.getElementById("ergebnis1").innerHTML="Schau nochmal über deine Antworten!";
+      }
+}
+
+function uebung2()
+{
+
+var x = 0;
+if (document.getElementById("answer4").value == "K")
+      {
+        x=++x;
+      }
+else
+     {
+
+     }
+if (document.getElementById("answer5").value == "k")
+      {
+        x=++x;
+      }
+else
+      {
+
+      }
+if (document.getElementById("answer6").value == "Z")
+      {
+        x=++x;
+      }
+else
+      {
+
+      }
+if (x==3)
+      {
+        document.getElementById("ergebnis2").innerHTML="Alles richtig, lies weiter!";
+      }
+else
+      {
+        document.getElementById("ergebnis2").innerHTML="Schau nochmal über deine Antworten!";
+      }
+}
+
+function uebung3()
+{
+
+var x = 0;
+var y = 0;
+if (document.getElementById("answer7").value == "Wasser")
+      {
+        x=++x;
+        document.getElementById("answer7").setAttribute("class","");
+      }
+else
+     {
+       document.getElementById("answer7").setAttribute("class","redText1");
+       y=++y;
+     }
+if (document.getElementById("answer8").value == "hexen")
+      {
+        x=++x;
+        document.getElementById("answer8").setAttribute("class","");
+      }
+else
+      {
+        document.getElementById("answer8").setAttribute("class","redText1");
+        y=++y;
+      }
+if (document.getElementById("answer9").value == "Boden")
+      {
+        x=++x;
+        document.getElementById("answer9").setAttribute("class","");
+      }
+else
+      {
+        document.getElementById("answer9").setAttribute("class","redText1");
+        y=++y;
+      }
+if (x==3)
+      {
+        document.getElementById("ergebnis3").innerHTML="Alles richtig, lies weiter!";
+      }
+else if (y==1)
+      {
+        document.getElementById("ergebnis3").innerHTML="Da hat sich noch ein Fehler eingeschlichen!";
+      }
+else if (y>1)
+      {
+        document.getElementById("ergebnis3").innerHTML="Da haben sich noch " + y + " Fehler eingeschlichen!";
+      }
+}
+
+</script>
+</html>
