@@ -168,6 +168,8 @@ function uebung3()
 
 var x = 0;
 var y = 0;
+var str = "HIER";
+var result = str.link("index.html");
 if (document.getElementById("answer7").value == "Truhe")
       {
         x=++x;
@@ -200,7 +202,7 @@ else
       }
 if (x==3)
       {
-        document.getElementById("ergebnis3").innerHTML="Alles richtig, lies weiter!";
+        document.getElementById("ergebnis3").innerHTML="Alles richtig. Das Abenteuer ist zu Ende. Kehre " + result + " zur Startseite zurück.";
       }
 else if (y==1)
       {

@@ -35,16 +35,17 @@ task {
 }
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
+
 table {
      margin: auto;
 }
 
 /*Fuﬂzeile*/
 footer {
-    color: white;
-    height: 38px;
+    color: black;
+    height: 36px;
     position: fixed;
     text-align: center;
     background: #10405E;
