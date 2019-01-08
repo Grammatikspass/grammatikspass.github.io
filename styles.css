@@ -199,7 +199,7 @@ select {
     }
     .bilder {
        height: 715px;
-  }
+    }
 }
 
 @media screen and (max-width: 680px) {
